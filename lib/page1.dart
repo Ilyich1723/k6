@@ -6,16 +6,16 @@ class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Страница 1'),
+        title: Text('Ильин'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Это Страница 1'),
+            Text('Ильин'),
             ElevatedButton(
               onPressed: () {
-                Get.back(); // Вернуться на предыдущую страницу (в данном случае, на главную)
+                Get.back(); 
               },
               child: Text('Назад на Главную'),
             ),

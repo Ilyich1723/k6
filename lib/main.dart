@@ -22,7 +22,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Главная страница'),
+        title: Text('Home Page'),
       ),
       body: Center(
         child: Column(
@@ -32,20 +32,27 @@ class MyHomePage extends StatelessWidget {
               onPressed: () {
                 Get.to(() => Page1());
               },
-              child: Text('Перейти на Страницу 1'),
-            ),
+              child: Text('Ильин'),
+               style: ElevatedButton.styleFrom(
+                primary: Colors.green, 
+              
+            )),
             ElevatedButton(
               onPressed: () {
                 Get.to(() => Page2());
               },
-              child: Text('Перейти на Страницу 2'),
-            ),
+              child: Text('Маландин'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.purple, 
+            )),
             ElevatedButton(
               onPressed: () {
                 Get.to(() => Page3());
               },
-              child: Text('Перейти на Страницу 3'),
-            ),
+              child: Text('Груздев'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.yellow, 
+            )),
           ],
         ),
       ),
